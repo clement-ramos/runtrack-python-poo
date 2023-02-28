@@ -20,13 +20,13 @@ class Livre():
         return self.__disponible
     
     def emprunter(self):
-        if self.__disponible:
+        if self.verification():
             self.__disponible = False
         else:
             print("Ce livre n'est pas disponible")
 
     def rendre(self):
-        if not self.__disponible:
+        if not self.verification():
             self.__disponible = True
         else:
             print("Vous avez emprunter le livre")
