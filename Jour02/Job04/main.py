@@ -31,10 +31,12 @@ class Student():
         print("Prenom = " + self.__prenom)
         print("id = " + str(self.__id))
         print("Niveau = " + self.__level)
+        # print(f"Niveau =  {self.level}")
+        # print("Niveau =  {}, {}".format(self.__level, self.__nom))
+
 
 
 student1 = Student("Doe", "John", 145)
-student1.add_credits(10)
 student1.add_credits(70)
 student1.show_credits()
 student1.studentInfo()

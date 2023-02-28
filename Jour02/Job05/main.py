@@ -5,11 +5,12 @@ class Voiture():
         self.__annee = annee
         self.__km = km
         self.__en_marche = False
-        self.__reservoir = 50
+        self.__reservoir = 4
 
     def demarrer(self):
         if self.__verifier_plein() > 5:
             self.__en_marche = True
+            print("Je demarre")
         else:
             print("Pas assez d'essence pour démarrer")
 

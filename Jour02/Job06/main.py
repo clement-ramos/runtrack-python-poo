@@ -33,12 +33,13 @@ class Commande():
         i = 0
         for i in range(2):
             if menu[i]["nom"] in self.__liste_plat:
-                self.total += self.calcul_TVA(i)
+                nombre = self.__liste_plat.count(menu[i]["nom"])
+                self.total += (self.calcul_TVA(i) * nombre)
         
         print(self.total)
 
     def calcul_TVA(self,plat):
-        total = menu[plat]["Prix HT"] + (0.2 * menu[plat]["Prix HT"])
+        total = menu[plat]["Prix HT"] * 1.2
         return total
 
     def affiche_cmd(self):
@@ -46,6 +47,6 @@ class Commande():
         self.__calcul_commande()
 
 
-commande1 = Commande(1, ("Burger","Pizza"), "En cours")
+commande1 = Commande(1, ("Burger","Pizza","Pizza"), "En cours")
 
 commande1.affiche_cmd()

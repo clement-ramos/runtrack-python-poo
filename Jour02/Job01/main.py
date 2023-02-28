@@ -15,8 +15,8 @@ class Rectangle:
 
 rectangle = Rectangle(10, 5)
 
-print("Longueur et Largeur :", rectangle.get()) # affiche 10
+print("Longueur et Largeur :", rectangle.get()) 
 
 rectangle.set(20, 10)
 
-print("Longueur et Largeur modifié :", rectangle.get()) # affiche 10
+print("Longueur et Largeur modifié :", rectangle.get()) 

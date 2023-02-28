@@ -3,7 +3,6 @@ class Livre():
         self.__titre = titre
         self.__auteur = auteur
         self.__pages = pages
-        self.__disponible = True
 
     def get(self):
         return self.__titre, self.__auteur, self.__pages
@@ -21,5 +20,5 @@ livre1 = Livre("harry_potter", "JK", 430)
 print(livre1.get())
 livre1.set("harry_potter_2", "JK", 230)
 print(livre1.get())
-livre1.set("harry_potter_2", "JK", -230)
+livre1.set("harry_potter_3", "JK", -230)
 print(livre1.get())
