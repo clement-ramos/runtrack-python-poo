@@ -50,3 +50,13 @@ class Commande():
 commande1 = Commande(1, ("Burger","Pizza","Pizza"), "En cours")
 
 commande1.affiche_cmd()
+
+plat4 =  {
+    "nom": "Boeuf",
+    "Prix HT": 18,
+    "Statut": ""
+    }
+
+menu.append(plat4)
+
+print(menu)
